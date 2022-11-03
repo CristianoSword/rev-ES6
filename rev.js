@@ -37,3 +37,15 @@ let func = (a , b = 1) => {
 }
 //es6 - exemplo 2
 let func = (a , b = 1) => a + b
+
+//Spread syntax
+//es5 - expands array
+let a1 = [1,2, 3]
+let a2 = ['a', 'b', 'c']
+let a3 = [...a1, ...a2]
+console.log(a3) // [1, 2, 3, "a", "b", "c"]
+
+//es6 - expands function
+let b1 = [1 ,2, 3]
+let func2 = (a, b, c) => a + b + c
+console.log(func2(...b1)) //6
