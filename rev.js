@@ -24,3 +24,16 @@ function func(a, b, c){
 }
 //es6 - return pode ser omitido usando funcoes de seta sem um corpo de bloco
 let func = (a, b, c) => a + b + c  //colchetes devem ser omitidos
+
+//Default parameters
+//es5
+var func = function (a, b) {
+    b = 1
+    return a + b
+}
+//es6
+let func = (a , b = 1) => {
+    return a + b
+}
+//es6 - exemplo 2
+let func = (a , b = 1) => a + b
