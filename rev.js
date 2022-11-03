@@ -49,3 +49,43 @@ console.log(a3) // [1, 2, 3, "a", "b", "c"]
 let b1 = [1 ,2, 3]
 let func2 = (a, b, c) => a + b + c
 console.log(func2(...b1)) //6
+
+//=================================================================
+//      Promises - representa a conclusao de uma funcao async
+//=================================================================
+
+//es5 - callback
+function doSecond() {
+    console.log('Do second.')
+}
+
+function doFirst(callback) {
+    setTimeout(function () {
+        console.log('Do first.')
+
+        callback()
+    }, 500)
+}
+
+doFirst(doSecond)
+
+//es6 - promises
+let doSecond1 = () => {
+    console.log('Do second.')
+}
+
+let doFirst1 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log('Do first.')
+
+        resolve()
+    }, 500)
+})
+
+doFirst1.then(doSecond1)
+
+//Exemplo usando XMLHttpRequest
+//es5 - callback
+
+
+//es6 - promises
