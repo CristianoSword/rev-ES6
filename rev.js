@@ -86,6 +86,25 @@ doFirst1.then(doSecond1)
 
 //Exemplo usando XMLHttpRequest
 //es5 - callback
+function makeRequest(method, url, callback) {
+    var request = new XMLHttpRequest()
 
+    request.open(method, url)
+    request.onload = function () {
+        callback(null, request.response)
+    }
+    request.onerror = function () {
+        callback(request.response)
+    }
+    request.send()
+}
+
+makeRequest('GET', 'https://url.json', function (err, data) {
+    if (err) {
+        throw new Error(err)
+    }else {
+        console.log(data)
+    }     
+})
 
 //es6 - promises
