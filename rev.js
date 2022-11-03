@@ -108,3 +108,21 @@ makeRequest('GET', 'https://url.json', function (err, data) {
 })
 
 //es6 - promises
+function makeRequest(method, url) {
+    return new Promise((resolve, reject) => {
+        let request = new XMLHttpRequest()
+
+        request.open(method, url)
+        request.onload = resolve
+        request.onerror = reject
+        request.send()
+    })
+}
+
+makeRequest('GET', 'https://url.json')
+    .then((event) => {
+        console.log(event.target.response)
+    })
+    .catch((err) => {
+        throw new Error(err)
+    })
