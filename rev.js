@@ -16,3 +16,11 @@ let func = (a, b ,c) => {} //parenteses requerido com multiplos parametros
 //template literais
 var str = 'string date: ' + date //es5
 let str = `string date: ${date}` //es6
+
+//Implicit returns
+//es5
+function func(a, b, c){
+    return a + b + c
+}
+//es6 - return pode ser omitido usando funcoes de seta sem um corpo de bloco
+let func = (a, b, c) => a + b + c  //colchetes devem ser omitidos
