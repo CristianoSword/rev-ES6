@@ -13,4 +13,6 @@ var func = function (a, b, c) {} //func expression
 let func = (a) => {} // parenteses opcional como um parametro
 let func = (a, b ,c) => {} //parenteses requerido com multiplos parametros
 
-
+//template literais
+var str = 'string date: ' + date //es5
+let str = `string date: ${date}` //es6
