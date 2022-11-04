@@ -9,4 +9,4 @@
  - [x] Spread syntax
  - [x] Expands function
  - [x] Promises & Callbacks
- - [ ] Promises & Callbacks w/ XMLHttpRequest
+ - [x] Promises & Callbacks w/ XMLHttpRequest
