@@ -8,5 +8,5 @@
  - [x] Default parameters
  - [x] Spread syntax
  - [x] Expands function
- - [x] Promises & Callbacks
+ - [x] Promises & Callbacks (rev)
  - [x] Promises & Callbacks w/ XMLHttpRequest
