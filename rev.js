@@ -126,3 +126,16 @@ makeRequest('GET', 'https://url.json')
     .catch((err) => {
         throw new Error(err)
     })
+
+
+//forEach() ES6
+//calls a function for each element in an array ans multiply each value with 10
+
+const numbers = [24, 05, 19, 87];
+numbers.forEach(myFunction)
+
+document.getElementById("demo").innerHTML = numbers; // output 240,50,190,870
+
+function myFunction(item, index, arr) {
+  arr[index] = item * 10;
+}
