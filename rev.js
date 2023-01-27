@@ -10,7 +10,7 @@ const CONST_ID = 0 //convention
 function func (a, b, c) {} //func declaration 
 var func = function (a, b, c) {} //func expression 
 //es6
-let func = (a) => {} // parenteses opcional como um parametro
+let func = (a) => {} // parenteses opcional para um parametro, ou uma linha
 let func = (a, b ,c) => {} //parenteses requerido com multiplos parametros
 
 //template literais
@@ -24,6 +24,7 @@ function func(a, b, c){
 }
 //es6 - return pode ser omitido usando funcoes de seta sem um corpo de bloco
 let func = (a, b, c) => a + b + c  //colchetes devem ser omitidos
+let soma = () => a + b // funcao retorna a soma dos elementos 'a' e 'b'
 
 //Default parameters
 //es5
